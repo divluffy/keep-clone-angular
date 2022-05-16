@@ -1,0 +1,81 @@
+.card {
+    position: relative;
+    width: 220px;
+    cursor: move;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.pin_and_add {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.23);
+}
+
+.title_sections {
+    padding: 0 30px;
+}
+
+.option_card {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    opacity: 0;
+    transition: .2s ease-in-out;
+}
+
+.card:hover .option_card {
+    opacity: 1;
+}
+
+.card .pin_and_add {
+    opacity: 0;
+    transition: .2s ease-in-out;
+}
+
+.card:hover .pin_and_add {
+    opacity: 1;
+}
+
+.title_Card {
+    font-size: 1.1rem;
+    margin: 15px 8px;
+}
+
+.content_text {
+    font-size: .9rem;
+    color: rgb(66, 66, 66);
+    line-height: 20px;
+    margin: 7px;
+}
+
+
+.btn_option {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_option:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: #eee;
+}
+
+.btn_option svg {
+    width: 20px;
+    height: 20px;
+    fill: rgb(104, 104, 104);
+}
+
+.btn_option:hover svg {
+    fill: rgb(0, 0, 0);
+}

@@ -1,0 +1,5 @@
+<app-nav (isMenuopen)="checkMenu($event)"></app-nav>
+<div class="content">
+  <app-aside [isSideSmall]="reSendMenuOpen" class="bowl_aside" [class.active]="reSendMenuOpen"></app-aside>
+  <app-main class="bowl_main" [class.active]="reSendMenuOpen"></app-main>
+</div>
